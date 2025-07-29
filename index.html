@@ -20,11 +20,12 @@
             border-radius: 50%;
         }
         
+        
         .disco[data-cor="branco"]{
             border: 2px solid black;
             background: radial-gradient(circle at top, white, lightgrey);
         }
-
+        
         .disco[data-cor="preto"]{
             background: radial-gradient(circle at top, grey, black);
             border: 2px solid white;
@@ -52,6 +53,12 @@
         }
         .disco.selecionado{
             border-color: red;
+        }
+        .disco[data-cor="branco"]:hover{ 
+            background: lightgray;
+        }
+        .disco[data-cor="preto"]:hover{ 
+            background: darkgrey;
         }
     </style>
 </head>
