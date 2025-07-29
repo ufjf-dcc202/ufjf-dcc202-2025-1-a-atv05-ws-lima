@@ -14,16 +14,20 @@
             border: 1px solid black;
             min-height: 50px;
         }
-        .disco{
-            background: radial-gradient(circle at top, white, lightgrey);
+        .disco{ 
             width: 90%;
             height: 90%;
-            border: 2px solid black;
             border-radius: 50%;
+        }
+        
+        .disco[data-cor="branco"]{
+            border: 2px solid black;
+            background: radial-gradient(circle at top, white, lightgrey);
         }
 
         .disco[data-cor="preto"]{
             background: radial-gradient(circle at top, grey, black);
+            border: 2px solid white;
         }
         .disco[data-posicao="6"]{
             grid-column: 7;
@@ -45,6 +49,9 @@
         }
         .disco[data-posicao="0"]{
             grid-column: 1;
+        }
+        .disco.selecionado{
+            border-color: red;
         }
     </style>
 </head>
